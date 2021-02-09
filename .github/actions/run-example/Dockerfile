@@ -3,6 +3,7 @@ FROM golang:1.12 AS build
 # set the working directory
 WORKDIR /src
 # copy the sorce code into the /src directory
+RUN ls -alt
 COPY ./module-one .
 COPY ./module-two .
 # build the moduletwo.go
