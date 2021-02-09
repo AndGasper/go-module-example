@@ -8,6 +8,5 @@ jobs:
     steps:
       - id: checkout
         uses: actions/checkout@v2
-      - id: post-checkout
-        run: |
-          ls -alt /home/runner/go-module-example
+      - id: run-example
+        uses: ./.github/actions/run-example
