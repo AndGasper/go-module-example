@@ -4,8 +4,9 @@ FROM golang:1.12 AS build
 # WORKDIR /src
 # maybe don't set the working directory
 # copy the sorce code into the /src directory
-COPY ./module-one .
-COPY ./module-two .
+# COPY ./module-one .
+# COPY ./module-two .
+COPY ./kittenmittens.txt .
 # build the moduletwo.go
 RUN go build -o /out/moduletwo ./module-two/moduletwo.go
 FROM scratch as bin
