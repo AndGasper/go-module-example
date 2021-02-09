@@ -6,5 +6,7 @@ jobs:
     # Because newer is always better, right?
     runs-on: ubuntu-latest
     steps:
+      - id: Checkout
+        uses: actions/checkout@v2
       - id: run-example
         uses: ./.github/actions/run-example/action.yml
