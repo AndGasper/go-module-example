@@ -10,4 +10,4 @@ jobs:
         uses: actions/checkout@v2
       - id: post-checkout
         run: |
-          ls /
+          ls -alt /home/runner/go-module-example
