@@ -1,4 +1,7 @@
 # Go module example
-[!run-example](https://github.com/AndGasper/go-module-example/workflows/Run%20Example/badge.svg)
+![run-go-module](https://github.com/AndGasper/go-module-example/.github/workflows/Run%20Go%20Module/badge.svg)
 
-I think it has to match the name or something like that.
+Let's try this again...
+```
+https://github.com/<OWNER>/<REPOSITORY>/workflows/<WORKFLOW_NAME>/badge.svg
+```
