@@ -6,9 +6,9 @@ jobs:
     # Because newer is always better, right?
     runs-on: ubuntu-latest
     steps:
-      - id: Checkout repository
+      - id: checkout-repository
         uses: actions/checkout@v2
-      - id: Try and build after checking out
+      - id: try-and-build
         run: |
           tar -C /usr/local -xzf go1.15.8.linux-amd64.tar.gz
           export PATH=$PATH:/usr/local/go/bin
