@@ -1,0 +1,10 @@
+name: Run Go Module
+on: [workflow_dispatch]
+jobs:
+  simple-job:
+    name: Simple job
+    # Because newer is always better, right?
+    runs-on: ubuntu-latest
+    steps:
+      - id: run-example
+        uses: ./.github/actions/run-example/action.yml

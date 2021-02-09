@@ -1,0 +1,10 @@
+name: 'Run example'
+
+description: 'Basic run example output'
+inputs:
+outputs:
+
+runs:
+  using 'docker'
+  image: Dockerfile
+  
