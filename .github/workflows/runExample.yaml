@@ -13,6 +13,7 @@ jobs:
           go version
           ls -alt /home/runner/work/go-module-example/go-module-example/
           go build /home/runner/work/go-module-example/go-module-example/module-one/moduleone.go
+          go get /home/runner/work/go-module-example/go-module-example/module-one
           go build -o /home/runner/work/go-module-example/go-module-example/moduletwo ./module-two/moduletwo.go
           ./moduletwo
           
