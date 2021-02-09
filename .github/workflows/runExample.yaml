@@ -6,8 +6,8 @@ jobs:
     # Because newer is always better, right?
     runs-on: ubuntu-latest
     steps:
-      - id: Checkout
+      - id: checkout
         uses: actions/checkout@v2
-      - id: Post checkout
+      - id: post-checkout
         run: |
           ls /
