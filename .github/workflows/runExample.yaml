@@ -8,6 +8,7 @@ jobs:
     steps:
       - id: Checkout repository
         uses: actions/checkout@v2
+      - id: Try and build after checking out
         run: |
           tar -C /usr/local -xzf go1.15.8.linux-amd64.tar.gz
           export PATH=$PATH:/usr/local/go/bin
