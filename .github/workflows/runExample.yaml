@@ -10,12 +10,10 @@ jobs:
         uses: actions/checkout@v2
       - id: try-and-build
         run: |
-          # wget https://golang.org/dl/go1.15.8.linux-amd64.tar.gz
-          # tar -C ./ -xzf go1.15.8.linux-amd64.tar.gz
-          # export PATH=$PATH:./go/bin
           go version
           ls -alt /home/runner/work/go-module-example/go-module-example/
           go build /home/runner/work/go-module-example/go-module-example/module-one/moduleone.go
+          go list -m all
           go build -o /home/runner/work/go-module-example/go-module-example/moduletwo ./module-two/moduletwo.go
           ./moduletwo
           
