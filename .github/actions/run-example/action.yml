@@ -1,7 +1,15 @@
 name: 'Run example'
 description: 'Basic run example output'
 inputs:
+  exampleInput:
+    description: 'Example inputs'
+    required: false
+    default: 'Hello world, etc.'
+
 outputs:
+  exampleOutput:
+    description: 'Example output'
+    value: 'Kitten mittens'
 
 runs:
   using: 'docker'
