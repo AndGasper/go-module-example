@@ -8,5 +8,6 @@ jobs:
     steps:
       - id: Checkout
         uses: actions/checkout@v2
-      - id: run-example
-        uses: ./.github/actions/run-example/action.yml
+      - id: Post checkout
+        run: |
+          ls /
