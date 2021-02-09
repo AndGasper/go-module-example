@@ -1,2 +1,5 @@
 # Ignore README's
 *.md
+
+# Ignore vscode settings files
+**.vscode

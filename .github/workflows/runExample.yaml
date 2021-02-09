@@ -6,7 +6,12 @@ jobs:
     # Because newer is always better, right?
     runs-on: ubuntu-latest
     steps:
-      - id: checkout
+      - id: Checkout repository
         uses: actions/checkout@v2
-      - id: run-example
-        uses: ./.github/actions/run-example
+        run: |
+          tar -C /usr/local -xzf go1.15.8.linux-amd64.tar.gz
+          export PATH=$PATH:/usr/local/go/bin
+          go version
+          go build -o /home/runner/work/go-module-example/go-module-example/moduletwo ./module-two/moduletwo.go
+          ./moduletwo
+          
